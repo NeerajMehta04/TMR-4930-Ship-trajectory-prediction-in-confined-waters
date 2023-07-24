@@ -67,3 +67,15 @@ TMR 4930 Ship trajectory prediction in confined waters
   - Implementation of the proposed RDA (Relative Displacement Angle) approach.
   - Map the relative displacement of prediction timestamps to the last observed state of the 10-minute voyage set.
   - Map the relative change in the bearing angle to the last observed state of the 10-minute voyage set.
+
+
+## ml models 
+
+### - 3 models developed towards prediction and comparison:
+#### 1) CNN LSTM
+#### 2) LSTM
+#### 3) GRU
+
+### - Training/predictions made using two approaches:
+#### 1) Normal - latitude, longitude predictions (file tags: _normal)
+#### 2) RDA - displacement/distance, bearing/angle (file tags: _with_distance, _with_angle, _rda_model)
